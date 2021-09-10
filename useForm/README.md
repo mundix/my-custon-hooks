@@ -1,8 +1,13 @@
-# useCounter Hook
+# useForm Hook
 
-Ejemplo de uso 
+Ejemplo de uso
 ```
-    const {counter, increment, decrement, reset} = useCounter(10);
+    cosnt intialForm = {
+        name: '',
+        age: 0,
+        email: ''
+    }
+    const [formValues, handleInputChange, reset] = useForm(initialForm);
 
 ```
-    userCounter() //Recibe un valor por defecto 
+    
